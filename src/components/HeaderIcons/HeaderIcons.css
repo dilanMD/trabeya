@@ -1,0 +1,39 @@
+.header-icons-container {
+  display: flex;
+  float: right;
+  align-items: center;
+}
+
+.header-icon {
+  position: relative;
+  display: inline;
+  margin-right: 20px;
+}
+
+.header-icon:hover {
+  cursor: pointer;
+}
+
+.header-icon span {
+  position: absolute;
+  right: -3px;
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+}
+
+.username {
+  display: inline;
+  margin-right: 5px;
+}
+
+.username:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.user-image {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+}
