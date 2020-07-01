@@ -28,30 +28,38 @@ const Menu = (props) => {
           </span>
         </div>
       </Link>
-      <div className={`menu-item ${active === "profile" && "active"}`}>
-        <MdAccountBox className="menu-icon" size={20} color={white} />
-        <span className="menu-name" style={{ color: white }}>
-          Profile
-        </span>
-      </div>
-      <div className={`menu-item ${active === "reports" && "active"}`}>
-        <RiBookletLine className="menu-icon" size={20} color={white} />
-        <span className="menu-name" style={{ color: white }}>
-          Reports
-        </span>
-      </div>
-      <div className={`menu-item ${active === "inside" && "active"}`}>
-        <RiComputerLine className="menu-icon" size={20} color={white} />
-        <span className="menu-name" style={{ color: white }}>
-          Inside The App
-        </span>
-      </div>
-      <div className={`menu-item ${active === "query" && "active"}`}>
-        <RiComputerLine className="menu-icon" size={20} color={white} />
-        <span className="menu-name" style={{ color: white }}>
-          Natural Language Query
-        </span>
-      </div>
+      <Link to="/profile">
+        <div className={`menu-item ${active === "profile" && "active"}`}>
+          <MdAccountBox className="menu-icon" size={20} color={white} />
+          <span className="menu-name" style={{ color: white }}>
+            Profile
+          </span>
+        </div>
+      </Link>
+      <Link to="/reports">
+        <div className={`menu-item ${active === "reports" && "active"}`}>
+          <RiBookletLine className="menu-icon" size={20} color={white} />
+          <span className="menu-name" style={{ color: white }}>
+            Reports
+          </span>
+        </div>
+      </Link>
+      <Link to="/inside">
+        <div className={`menu-item ${active === "inside" && "active"}`}>
+          <RiComputerLine className="menu-icon" size={20} color={white} />
+          <span className="menu-name" style={{ color: white }}>
+            Inside The App
+          </span>
+        </div>
+      </Link>
+      <Link to="/query">
+        <div className={`menu-item ${active === "query" && "active"}`}>
+          <RiComputerLine className="menu-icon" size={20} color={white} />
+          <span className="menu-name" style={{ color: white }}>
+            Natural Language Query
+          </span>
+        </div>
+      </Link>
     </React.Fragment>
   );
 };
