@@ -1,0 +1,10 @@
+.current-page {
+  font-size: medium;
+  font-weight: bolder;
+  margin-right: 10px;
+}
+
+.full-path {
+  font-size: medium;
+  font-weight: bolder;
+}

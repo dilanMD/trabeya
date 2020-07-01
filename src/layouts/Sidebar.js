@@ -1,14 +1,21 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import { MdMail } from "react-icons/md";
 import { FaArrowAltCircleLeft, FaArrowAltCircleRight } from "react-icons/fa";
 
 import Card from "../components/Card/Card";
 import { COLORS } from "../constants/colors";
+import { getActiveMenu } from "../helpers/SidebarHelper";
 import ProfilePic from "../images/Mark-Zuckerberg.jpg";
 import Menu from "./Menu";
 
-const Sidebar = () => {
+const Sidebar = (props) => {
+  const { path } = props.match;
   const { green, white } = COLORS;
+  const [activeMenu, setActiveMenu] = useState(null);
+
+  useEffect(() => {
+    setActiveMenu(getActiveMenu(path));
+  });
 
   const collapseHandler = () => {
     let sidebar = document.getElementById("sidebar");
@@ -45,7 +52,7 @@ const Sidebar = () => {
         <h5 className="designation" style={{ color: white }}>
           UI/UX Engineer
         </h5>
-        <Menu />
+        <Menu active={activeMenu} />
         {/* Message icon with number of unread messages */}
         <div className="message-icon-container">
           <MdMail className="message-icon" size={30} color={green} />

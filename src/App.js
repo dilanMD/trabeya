@@ -9,19 +9,28 @@ import Apps from "./pages/Apps";
 function App(props) {
   return (
     <React.Fragment>
-      <Layout />
       <Route
         exact
         path="/"
         render={(props) => {
-          return <Home />;
+          return (
+            <React.Fragment>
+              <Layout {...props} />
+              <Home {...props} />
+            </React.Fragment>
+          );
         }}
       />
       <Route
         exact
         path="/apps"
         render={(props) => {
-          return <Apps />;
+          return (
+            <React.Fragment>
+              <Layout {...props} />
+              <Apps {...props} />
+            </React.Fragment>
+          );
         }}
       />
     </React.Fragment>
