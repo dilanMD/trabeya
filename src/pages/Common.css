@@ -1,0 +1,17 @@
+[class*="col-"] {
+  text-align: center;
+}
+
+[class*="col-"] .card {
+  padding: 20px;
+}
+
+[class*="col-"] .card .title {
+  font-size: 1.5rem;
+  margin: 0 auto;
+}
+
+[class*="col-"] .card .info {
+  width: 50%;
+  margin: 0 auto 50px auto;
+}
