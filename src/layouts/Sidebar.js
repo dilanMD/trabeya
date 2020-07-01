@@ -1,4 +1,5 @@
 import React from "react";
+import { MdMail } from "react-icons/md";
 
 import Card from "../components/Card/Card";
 import { COLORS } from "../constants/colors";
@@ -18,6 +19,10 @@ const Sidebar = () => {
           UI/UX Engineer
         </h5>
         <Menu />
+        <div className="message-icon-container">
+          <MdMail className="message-icon" size={30} color={green} />
+          <span style={{ backgroundColor: green, color: white }}>2</span>
+        </div>
       </div>
     </div>
   );
