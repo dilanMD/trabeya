@@ -11,6 +11,7 @@ const Inside = () => {
   const { green, white, grey, text } = COLORS;
   return (
     <div className="row">
+      <div className="col-s-4"></div>
       <div className="col-6">
         <Card radius={20}>
           <img src={AdminImage} alt="Admin" width="200" />

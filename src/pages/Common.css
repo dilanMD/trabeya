@@ -1,5 +1,6 @@
 [class*="col-"] {
   text-align: center;
+  float: left;
 }
 
 [class*="col-"] .card {
