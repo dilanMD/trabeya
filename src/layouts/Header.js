@@ -65,7 +65,7 @@ const Header = () => {
             <TimeWidget />
           </div>
           <div className="col-3">
-            <HeaderIcons username="Mark Zuckerberg" userImage={ProfilePic} />
+            <HeaderIcons username="Zuckerberg" userImage={ProfilePic} />
           </div>
         </Card>
       </div>

@@ -63,7 +63,7 @@
 }
 
 /* Not desktop */
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 860px) {
   #header {
     visibility: hidden;
   }
