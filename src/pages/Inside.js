@@ -7,7 +7,7 @@ import PasswordInput from "../components/TextInput/PasswordInput";
 import Button from "../components/Button/Button";
 import { COLORS } from "../constants/colors";
 import { AUTH_TYPES } from "../constants/authTypes";
-import AdminImage from "../images/admin.webp";
+import AdminImage from "../images/admin.png";
 
 const Inside = () => {
   const { green, white, grey, text } = COLORS;
