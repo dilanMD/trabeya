@@ -12,7 +12,7 @@ const TimeWidget = () => {
     }, 1000);
   });
 
-  return <div className="time-widget-container">{time}</div>;
+  return time !== null && <div className="time-widget-container">{time}</div>;
 };
 
 export default TimeWidget;
