@@ -5,6 +5,7 @@ import Sidebar from "./Sidebar";
 import Breadcrumb from "./Breadcrumb";
 import Footer from "./Footer";
 import { getActiveMenu } from "../helpers/SidebarHelper";
+import { makeFirstLetterCapital } from "../helpers/Strings";
 
 const Layout = (props) => {
   const { path } = props.match;
@@ -18,7 +19,10 @@ const Layout = (props) => {
     <React.Fragment>
       <Sidebar activeMenu={activeMenu} />
       <Header />
-      <Breadcrumb prev="Dashboard" current={activeMenu} />
+      <Breadcrumb
+        prev="Dashboard"
+        current={activeMenu !== null && makeFirstLetterCapital(activeMenu)}
+      />
       <Footer />
     </React.Fragment>
   );
