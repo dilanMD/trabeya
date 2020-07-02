@@ -11,7 +11,6 @@ const Inside = () => {
   const { green, white, grey, text } = COLORS;
   return (
     <div className="row">
-      <div className="col-4"></div>
       <div className="col-6">
         <Card radius={20}>
           <img src={AdminImage} alt="Admin" width="200" />
@@ -28,7 +27,6 @@ const Inside = () => {
           <Button text="Set Password" />
         </Card>
       </div>
-      <div className="col-2"></div>
     </div>
   );
 };

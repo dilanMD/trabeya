@@ -5,6 +5,7 @@ import { AiOutlineAppstoreAdd } from "react-icons/ai";
 import { MdAccountBox } from "react-icons/md";
 import { RiBookletLine, RiComputerLine } from "react-icons/ri";
 
+import "./Menu.css";
 import { COLORS } from "../constants/colors";
 
 const Menu = (props) => {

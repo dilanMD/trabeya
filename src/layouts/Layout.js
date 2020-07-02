@@ -1,17 +1,24 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 
 import Header from "./Header";
 import Sidebar from "./Sidebar";
 import Breadcrumb from "./Breadcrumb";
 import Footer from "./Footer";
+import { getActiveMenu } from "../helpers/SidebarHelper";
 
 const Layout = (props) => {
-  console.log("Layout props", props);
+  const { path } = props.match;
+  const [activeMenu, setActiveMenu] = useState(null);
+
+  useEffect(() => {
+    setActiveMenu(getActiveMenu(path));
+  });
+
   return (
     <React.Fragment>
-      <Sidebar {...props} />
+      <Sidebar activeMenu={activeMenu} />
       <Header />
-      <Breadcrumb prev="Dashboard" current="Inside The App" />
+      <Breadcrumb prev="Dashboard" current={activeMenu} />
       <Footer />
     </React.Fragment>
   );

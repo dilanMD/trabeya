@@ -1,0 +1,38 @@
+#sidebar {
+  position: absolute;
+  left: 0;
+  top: 6rem;
+  width: 180px;
+  height: 120%;
+  border-top-right-radius: 180px;
+  transition: 1s;
+  z-index: 10;
+}
+
+.sidebar-contents {
+  width: 180px;
+  text-align: center;
+}
+
+.profile-pic {
+  margin-top: 120px;
+  width: 70px;
+  border-radius: 50%;
+}
+
+.profile-name,
+.designation {
+  font-size: 1rem;
+  margin: 10px auto;
+}
+
+.designation {
+  margin-bottom: 3rem;
+}
+
+/* Not Desktop */
+@media only screen and (max-width: 768px) {
+  #sidebar {
+    display: none;
+  }
+}

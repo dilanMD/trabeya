@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import { MdMail } from "react-icons/md";
 import { FaArrowAltCircleLeft, FaArrowAltCircleRight } from "react-icons/fa";
 
+import "./Sidebar.css";
 import Card from "../components/Card/Card";
 import { COLORS } from "../constants/colors";
 import { getActiveMenu } from "../helpers/SidebarHelper";
@@ -9,13 +10,8 @@ import ProfilePic from "../images/Mark-Zuckerberg.jpg";
 import Menu from "./Menu";
 
 const Sidebar = (props) => {
-  const { path } = props.match;
+  const { activeMenu } = props;
   const { green, white } = COLORS;
-  const [activeMenu, setActiveMenu] = useState(null);
-
-  useEffect(() => {
-    setActiveMenu(getActiveMenu(path));
-  });
 
   const collapseHandler = () => {
     let sidebar = document.getElementById("sidebar");
