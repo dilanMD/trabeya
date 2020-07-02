@@ -17,3 +17,13 @@
   margin-top: 20px;
   margin: 0 auto 50px auto;
 }
+
+.error {
+  color: rgb(255, 0, 0);
+  font-weight: bolder;
+}
+
+.success {
+  color: green;
+  font-weight: bolder;
+}
