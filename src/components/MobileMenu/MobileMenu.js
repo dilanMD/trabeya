@@ -19,14 +19,14 @@ const MobileMenu = (props) => {
       <Card>
         <Link to="/" onClick={handler}>
           <div className="mobile-menu-item">
-            <FaHome color={green} className="mobile-menu-icon" size={22} />
+            <FaHome color={white} className="mobile-menu-icon" size={22} />
             <span className="mobile-menu-name">Home</span>
           </div>
         </Link>
         <Link to="/apps" onClick={handler}>
           <div className="mobile-menu-item">
             <AiOutlineAppstoreAdd
-              color={green}
+              color={white}
               className="mobile-menu-icon"
               size={22}
             />
@@ -36,7 +36,7 @@ const MobileMenu = (props) => {
         <Link to="/profile" onClick={handler}>
           <div className="mobile-menu-item">
             <MdAccountBox
-              color={green}
+              color={white}
               className="mobile-menu-icon"
               size={22}
             />
@@ -46,7 +46,7 @@ const MobileMenu = (props) => {
         <Link to="/reports" onClick={handler}>
           <div className="mobile-menu-item">
             <RiBookletLine
-              color={green}
+              color={white}
               className="mobile-menu-icon"
               size={22}
             />
@@ -56,7 +56,7 @@ const MobileMenu = (props) => {
         <Link to="/inside" onClick={handler}>
           <div className="mobile-menu-item">
             <RiComputerLine
-              color={green}
+              color={white}
               className="mobile-menu-icon"
               size={22}
             />
@@ -66,7 +66,7 @@ const MobileMenu = (props) => {
         <Link to="/query" onClick={handler}>
           <div className="mobile-menu-item">
             <RiComputerLine
-              color={green}
+              color={white}
               className="mobile-menu-icon"
               size={22}
             />
