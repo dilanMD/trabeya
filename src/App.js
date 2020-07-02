@@ -6,6 +6,9 @@ import Layout from "./layouts/Layout";
 import Home from "./pages/Home";
 import Apps from "./pages/Apps";
 import Inside from "./pages/Inside";
+import Profile from "./pages/Profile";
+import Reports from "./pages/Reports";
+import Query from "./pages/Query";
 
 function App(props) {
   return (
@@ -36,12 +39,48 @@ function App(props) {
       />
       <Route
         exact
+        path="/profile"
+        render={(props) => {
+          return (
+            <React.Fragment>
+              <Layout {...props} />
+              <Profile {...props} />
+            </React.Fragment>
+          );
+        }}
+      />
+      <Route
+        exact
+        path="/reports"
+        render={(props) => {
+          return (
+            <React.Fragment>
+              <Layout {...props} />
+              <Reports {...props} />
+            </React.Fragment>
+          );
+        }}
+      />
+      <Route
+        exact
         path="/inside"
         render={(props) => {
           return (
             <React.Fragment>
               <Layout {...props} />
               <Inside {...props} />
+            </React.Fragment>
+          );
+        }}
+      />
+      <Route
+        exact
+        path="/query"
+        render={(props) => {
+          return (
+            <React.Fragment>
+              <Layout {...props} />
+              <Query {...props} />
             </React.Fragment>
           );
         }}
