@@ -42,16 +42,25 @@ const Header = () => {
         <Card height={50} toggle handler={menuToggleHandler}>
           <div id="mobile-profile">
             <img src={ProfilePic} alt="" width="30" className="dp" />
-            <MdMailOutline
-              size={18}
-              color={white}
-              className="mobile-header-icon"
-            />
-            <RiNotification3Line
-              size={18}
-              color={white}
-              className="mobile-header-icon"
-            />
+            <span className="icon-container">
+              <MdMailOutline
+                size={18}
+                color={white}
+                className="mobile-header-icon"
+              />
+              <span className="dot" style={{ backgroundColor: "blue" }}></span>
+            </span>
+            <span className="icon-container">
+              <RiNotification3Line
+                size={18}
+                color={white}
+                className="mobile-header-icon"
+              />
+              <span
+                className="dot"
+                style={{ backgroundColor: "orange" }}
+              ></span>
+            </span>
           </div>
           <MobileMenu id="mobile-menu" handler={collapseHandler} />
         </Card>

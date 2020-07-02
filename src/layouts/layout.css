@@ -76,6 +76,17 @@
   #mobile-profile {
     padding: 10px;
   }
+  .icon-container {
+    position: relative;
+  }
+
+  .dot {
+    position: absolute;
+    width: 5px;
+    height: 5px;
+    top: -12px;
+    border-radius: 50%;
+  }
 
   .dp {
     border-radius: 50%;
