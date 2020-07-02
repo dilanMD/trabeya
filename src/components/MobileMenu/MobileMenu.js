@@ -11,7 +11,7 @@ import Search from "../../components/TextInput/SearchInput";
 import { COLORS } from "../../constants/colors";
 
 const MobileMenu = (props) => {
-  const { green } = COLORS;
+  const { green, white } = COLORS;
   const { handler } = props;
 
   return (

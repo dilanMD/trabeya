@@ -3,6 +3,14 @@
   visibility: visible;
 }
 
+#header .card div {
+  float: left;
+}
+
+#mobile-header {
+  display: none;
+}
+
 /* Message Icon */
 .message-icon-container {
   position: relative;
@@ -46,6 +54,10 @@
 }
 
 /* Mobile Menu */
+#mobile-header {
+  background-color: #51a94b;
+}
+
 #mobile-menu {
   display: none;
 }
@@ -57,4 +69,7 @@
   }
 
   /* Mobile Menu */
+  #mobile-header {
+    display: block;
+  }
 }

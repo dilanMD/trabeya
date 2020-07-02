@@ -23,16 +23,14 @@ const Breadcrumb = ({ prev, current }) => {
 
   return (
     <React.Fragment>
-      <div className="row">
-        <div className="col-4">
-          <span className="current-page" style={{ color: green }}>
-            {CURRENT_PAGE.inside}
-          </span>
-          <span
-            className="full-path"
-            style={{ color: grey }}
-          >{`${prev} / ${CURRENT_PAGE.inside}`}</span>
-        </div>
+      <div className="col-4">
+        <span className="current-page" style={{ color: green }}>
+          {CURRENT_PAGE.inside}
+        </span>
+        <span
+          className="full-path"
+          style={{ color: grey }}
+        >{`${prev} / ${CURRENT_PAGE.inside}`}</span>
       </div>
     </React.Fragment>
   );
