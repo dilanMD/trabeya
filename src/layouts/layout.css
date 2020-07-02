@@ -72,4 +72,21 @@
   #mobile-header {
     display: block;
   }
+
+  #mobile-profile {
+    padding: 10px;
+  }
+
+  .dp {
+    border-radius: 50%;
+    border-color: #f2fde4;
+    border-width: 2px;
+    border-style: solid;
+    float: left;
+  }
+
+  .mobile-header-icon {
+    height: 30px;
+    margin-left: 20px;
+  }
 }
