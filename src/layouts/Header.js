@@ -6,6 +6,7 @@ import { RiNotification3Line } from "react-icons/ri";
 import "./layout.css";
 import Card from "../components/Card/Card";
 import ProfilePic from "../images/Mark-Zuckerberg.jpg";
+import Apple from "../images/apple.png";
 import SearchInput from "../components/TextInput/SearchInput";
 import TimeWidget from "../components/Widget/TimeWidget";
 import HeaderIcons from "../components/HeaderIcons/HeaderIcons";
@@ -57,7 +58,9 @@ const Header = () => {
       </div>
       <div id="header">
         <Card height={70}>
-          <div className="col-3"></div>
+          <div className="col-3">
+            <img src={Apple} alt="" width="50" />
+          </div>
           <div className="col-3">
             <SearchInput />
           </div>
