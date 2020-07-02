@@ -5,7 +5,7 @@ import Card from "../components/Card/Card";
 import PasswordInput from "../components/TextInput/PasswordInput";
 import Button from "../components/Button/Button";
 import { COLORS } from "../constants/colors";
-import AdminImage from "../images/admin.webp";
+import QueryImage from "../images/sql.webp";
 
 const Query = () => {
   const { green, white, grey, text } = COLORS;
@@ -14,18 +14,15 @@ const Query = () => {
       <div className="col-s-4"></div>
       <div className="col-6">
         <Card radius={20}>
-          <img src={AdminImage} alt="Admin" width="200" />
+          <img src={QueryImage} alt="Admin" />
           <h5 className="title" style={{ color: green }}>
-            Inside The App
+            Natural Language Query
           </h5>
           <p className="info" style={{ color: grey }}>
-            Enter the new password then your password will change! Don't forgot
-            again
+            Lorem Ipsum is simply dummy text of the printing and typesetting
+            industry. Lorem Ipsum has been the industry's standard dummy text
+            ever since the 1500s
           </p>
-          <PasswordInput hint="Old Password" disabled />
-          <PasswordInput hint="New Password" />
-          <PasswordInput hint="Confirm Password" />
-          <Button text="Set Password" />
         </Card>
       </div>
     </div>

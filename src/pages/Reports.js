@@ -14,7 +14,7 @@ const Reports = () => {
       <div className="col-s-4"></div>
       <div className="col-6">
         <Card radius={20}>
-          <img src={ReportImage} alt="Admin" width="200" />
+          <img src={ReportImage} alt="Admin" />
           <h5 className="title" style={{ color: green }}>
             Reports
           </h5>

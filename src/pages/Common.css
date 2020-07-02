@@ -7,15 +7,19 @@
   padding: 20px;
 }
 
+[class*="col-"] .card img {
+  width: 250px;
+}
+
 [class*="col-"] .card .title {
   font-size: 1.5rem;
-  margin: 0 auto;
+  margin: 20px auto 0px auto;
 }
 
 [class*="col-"] .card .info {
   width: 70%;
   margin-top: 20px;
-  margin: 0 auto 50px auto;
+  margin: 10px auto 50px auto;
 }
 
 .error {

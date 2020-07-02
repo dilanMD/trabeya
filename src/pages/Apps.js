@@ -14,7 +14,7 @@ const Apps = () => {
       <div className="col-s-4"></div>
       <div className="col-6">
         <Card radius={20}>
-          <img src={AppsImage} alt="Admin" width="200" />
+          <img src={AppsImage} alt="Admin" />
           <h5 className="title" style={{ color: green }}>
             Trabeya Store
           </h5>
